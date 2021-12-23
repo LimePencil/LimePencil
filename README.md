@@ -15,8 +15,8 @@
 
 ### GitHub Stats
 
-[![Jaeyoung's GitHub stats](https://github-readme-stats.vercel.app/api?username=LimePencil&count_private=true&show_icons=true&theme=aura_dark)](https://github.com/anuraghazra/github-readme-stats) 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LimePencil&theme=aura_dark&layout=compact" alt="drawing" height ="195"/>
+<img src="https://github-readme-stats.vercel.app/api?username=LimePencil&count_private=true&show_icons=true&theme=aura_dark" alt="drawing" height ="180"/><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LimePencil&theme=aura_dark&layout=compact" alt="drawing" height ="180"/>
+
 
 ### 🏆 Solved.ac Tier
 
