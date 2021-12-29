@@ -3,13 +3,13 @@
 
 ## 🤚 Hello! My name is Jaeyoung.
 
-✏️ 18/January 8/Korean/WS
+✏️ 19/Jan 8/Korean/WS
 
 ❤️ IU, Math, Science, and Coding
 
 ⚙️ Java, Python, C#, Unity, PyTorch
 
-💡Currently interested in: Machine Learning
+💡Currently interested in: Machine Learning and Problem Solving
 
 
 ### GitHub Stats
