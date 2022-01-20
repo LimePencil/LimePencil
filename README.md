@@ -19,4 +19,4 @@
 
 ### 🏆 Solved.ac Tier
 
-[![Solved.ac 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=LimePencil)](https://solved.ac/LimePencil)
+![Solved.ac 프로필](https://github-readme-solvedac.hyp3rflow.vercel.app/api/?handle=LimePencil)
