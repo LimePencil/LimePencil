@@ -3,7 +3,7 @@
 
 ## 🤚 Hello! My name is Jaeyoung.
 
-✏️ 19/Jan 8/Korean/WS
+✏️ 20/Jan 8/Korean/WS
 
 ❤️ IU, Math, Science, and Coding
 
