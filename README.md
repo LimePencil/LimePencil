@@ -19,4 +19,4 @@
 
 ### 🏆 Solved.ac Tier
 
-![Solved.ac 프로필](https://github-readme-solvedac.hyp3rflow.vercel.app/api/?handle=LimePencil)
+<img src="https://github-readme-solvedac.hyp3rflow.vercel.app/api/?handle=LimePencil"/> <img src="http://mazandi.herokuapp.com/api?handle=LimePencil&theme=warm"/>
