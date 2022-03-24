@@ -24,6 +24,8 @@
 ‎
 <a href="https://discordapp.com/users/Jaeyoung#7627"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/></a>
 <a href="mailto:jaeyoungshin03@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://limepencil.tistory.com/"><img src="https://img.shields.io/badge/-Tistory-orange?style=for-the-badge&logo=aboutdotme&logoColor=white"/></a>
+
 
 ‎
 <a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/></a>
