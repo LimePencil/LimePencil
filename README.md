@@ -32,7 +32,7 @@
 <a href="https://www.arduino.cc/"><img src="https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white"/></a>
 <a href="https://www.jetbrains.com/idea/"><img src="https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white"/></a>
 
-✏️20 / Jan 8 / 🇰🇷Korean / Yonsei 23학번  입학 예정
+✏️20 / 🇰🇷Korean / Yonsei 23학번  입학 예정
 
 ❤️ IU, Math, Science, and Programming
 
