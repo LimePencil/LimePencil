@@ -27,11 +27,6 @@
 <a href="https://limepencil.tistory.com/"><img src="https://img.shields.io/badge/-Tistory-orange?style=for-the-badge&logo=aboutdotme&logoColor=white"/></a>
 
 
-‎
-<a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/></a>
-<a href="https://www.arduino.cc/"><img src="https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white"/></a>
-<a href="https://www.jetbrains.com/idea/"><img src="https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white"/></a>
-
 ✏️20 / 🇰🇷Korean / Yonsei 23학번  입학 예정
 
 ❤️ IU, Math, Science, and Programming
