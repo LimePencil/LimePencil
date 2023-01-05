@@ -28,9 +28,9 @@
 <a href="https://limepencil.tistory.com/"><img src="https://img.shields.io/badge/-Tistory-orange?style=for-the-badge&logo=aboutdotme&logoColor=white"/></a>
 
 
-✏️20 / 🇰🇷Korean / Yonsei 23학번
+✏️21 / 🇰🇷Korean / Yonsei 23학번
 
-❤️ IU, Math, Science, and Programming
+❤️ Programming, Math, Science, and IU
 
 
 
