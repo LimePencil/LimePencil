@@ -23,9 +23,9 @@
 <a href="https://limepencil.tistory.com/"><img src="https://img.shields.io/badge/-Tistory-orange?style=for-the-badge&logo=aboutdotme&logoColor=white"/></a>
 
 
-✏️21 / 🇰🇷Korean / KAIST 23학번
+✏️22 / 🇰🇷Korean / KAIST 23학번
 
-❤️ Programming, Math, Science, and IU
+❤️ Programming, Math, Science, and Kitten 🐱 
 
 
 
