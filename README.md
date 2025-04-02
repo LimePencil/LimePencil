@@ -1,6 +1,6 @@
 ![waving](https://capsule-render.vercel.app/api?type=waving&height=250&text=Hello!&fontAlign=80&fontAlignY=35&color=gradient&desc=I'm%20Jaeyoung%20Shin&descAlign=79.2&descAlignY=55&animation=fadeIn)
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FLimePencil&count_bg=%23ED7C76&title_bg=%23252333&icon=github.svg&icon_color=%23E7E7E7&title=Visitors&edge_flat=false)](https://hits.seeyoufarm.com)
+
 [![Codeforces](https://badges.joonhyung.xyz/codeforces/limepencil.svg)](https://codeforces.com/profile/LimePencil)
 [![AtCoder](https://badges.joonhyung.xyz/atcoder/limepencil.svg)](https://atcoder.jp/users/LimePencil)
 [![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=LimePencil)](https://solved.ac/LimePencil)
@@ -34,4 +34,3 @@
 ### GitHub Stats
 
 <img src="https://github-readme-stats.vercel.app/api?username=LimePencil&count_private=true&show_icons=true&theme=github_dark" alt="drawing" height ="180"/><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LimePencil&theme=github_dark" alt="drawing" height ="180"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=LimePencil&theme=dark" alt="drawing" height ="180"/>
