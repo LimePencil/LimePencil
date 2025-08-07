@@ -25,7 +25,6 @@
 
 ✏️22 / 🇰🇷Korean / KAIST 23학번
 
-❤️ Programming, Math, Science, and Kitten 🐱 
 
 
 
