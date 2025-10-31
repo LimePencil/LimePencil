@@ -28,7 +28,7 @@
 
 
 
-💡Currently interested in: Machine Learning and Problem Solving 
+💡Currently interested in: Machine Learning and Problem Solving & 😺
 
 ### GitHub Stats
 
