@@ -15,7 +15,9 @@ jobs:
           node-version: '20'
       - name: Install dependencies
         run: npm install
-      - name: Generate SVG
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps chromium
+      - name: Generate PNG
         run: node index.js
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
@@ -23,6 +25,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add tui-profile.svg
+          git add tui-profile.png
           git commit -m "chore: Update TUI profile widget" || exit 0
           git push
