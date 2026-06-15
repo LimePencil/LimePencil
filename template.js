@@ -158,20 +158,19 @@ function renderHtml(stats) {
                                 <div class="stat-item"><span class="stat-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--font-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg> Current Job</span> <span class="stat-val">Data Engineer @ ROKAF (~2027.10)</span></div>
                                 <div class="stat-item"><span class="stat-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--font-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Email</span> <span class="stat-val" style="text-transform: none;">limepencil@kaist.ac.kr</span></div>
                                 <div class="stat-item"><span class="stat-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="var(--font-color)"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg> LinkedIn</span> <span class="stat-val" style="text-transform: none;">/in/limepencil</span></div>
+                                <div class="stat-item">
+                                    <span class="stat-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--font-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> Favorites</span> 
+                                    <span class="stat-val" style="display: flex; gap: 12px; align-items: center; text-transform: none;">
+                                        <span style="display: flex; align-items: center; gap: 4px; color: var(--font-color);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--warning-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7 .18 7.79 2.05 2.7 1.67 7.27-1.15 8.72-1.71.84-3.8 1.46-7.45 1.49-3.65-.03-5.74-.65-7.45-1.49-2.82-1.45-3.2-6.02-1.15-8.72.6-.79-1.22-7.21.18-7.79 1.4-.58 4.64.26 6.42 2.26.65-.17 1.33-.26 2-.26z"/><path d="M12 17a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/><path d="M12 14v3"/></svg> Kitten</span>
+                                        <span style="display: flex; align-items: center; gap: 4px; color: var(--font-color);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2" ry="2"></rect><path d="M6 12h4"></path><path d="M8 10v4"></path><line x1="15" y1="13" x2="15.01" y2="13"></line><line x1="18" y1="11" x2="18.01" y2="11"></line></svg> Games</span>
+                                        <span style="display: flex; align-items: center; gap: 4px; color: var(--font-color);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--purple-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg> Sleeping</span>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="terminal-card" style="margin-top: 20px;">
-                        <header>Favorite Things</header>
-                        <div>
-                            <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr);">
-                                <div class="stat-item"><span class="stat-label" style="display: flex; align-items: center; justify-content: center; gap: 6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--warning-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7 .18 7.79 2.05 2.7 1.67 7.27-1.15 8.72-1.71.84-3.8 1.46-7.45 1.49-3.65-.03-5.74-.65-7.45-1.49-2.82-1.45-3.2-6.02-1.15-8.72.6-.79-1.22-7.21.18-7.79 1.4-.58 4.64.26 6.42 2.26.65-.17 1.33-.26 2-.26z"/><path d="M12 17a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/><path d="M12 14v3"/></svg> Kitten</span></div>
-                                <div class="stat-item"><span class="stat-label" style="display: flex; align-items: center; justify-content: center; gap: 6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2" ry="2"></rect><path d="M6 12h4"></path><path d="M8 10v4"></path><line x1="15" y1="13" x2="15.01" y2="13"></line><line x1="18" y1="11" x2="18.01" y2="11"></line></svg> Games</span></div>
-                                <div class="stat-item"><span class="stat-label" style="display: flex; align-items: center; justify-content: center; gap: 6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--purple-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg> Sleeping</span></div>
-                            </div>
-                        </div>
-                    </div>
+
 
                     <div class="terminal-card" style="margin-top: 20px;">
                         <header>GitHub Statistics</header>
