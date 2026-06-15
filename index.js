@@ -17,7 +17,7 @@ async function main() {
         
         const context = await browser.newContext({
             viewport: { width: 900, height: 1200 }, // Generous height, will clip to content
-            deviceScaleFactor: 2
+            deviceScaleFactor: 4
         });
         
         const page = await context.newPage();

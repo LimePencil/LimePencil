@@ -23,8 +23,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
       - name: Commit changes
         run: |
-          git config --local user.email "71117066+LimePencil@users.noreply.github.com"
-          git config --local user.name "LimePencil"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add tui-profile.png
           git commit -m "chore: Update TUI profile widget" || exit 0
           git push
