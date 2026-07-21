@@ -137,6 +137,17 @@ function renderHtml(stats) {
             position: relative;
             top: -2px; /* Tweak to move icon slightly upward */
         }
+        .favorite-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--font-color);
+        }
+        .favorite-item svg {
+            display: block;
+            flex-shrink: 0;
+            transform: translateY(-1px);
+        }
         .stat-val { color: var(--primary-color); font-weight: bold; }
     </style>
 </head>
@@ -161,9 +172,9 @@ function renderHtml(stats) {
                                 <div class="stat-item">
                                     <span class="stat-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--font-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> Favorites</span> 
                                     <span class="stat-val" style="display: flex; gap: 12px; align-items: center; text-transform: none;">
-                                        <span style="display: flex; align-items: center; gap: 4px; color: var(--font-color);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--warning-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7 .18 7.79 2.05 2.7 1.67 7.27-1.15 8.72-1.71.84-3.8 1.46-7.45 1.49-3.65-.03-5.74-.65-7.45-1.49-2.82-1.45-3.2-6.02-1.15-8.72.6-.79-1.22-7.21.18-7.79 1.4-.58 4.64.26 6.42 2.26.65-.17 1.33-.26 2-.26z"/><path d="M12 17a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/><path d="M12 14v3"/></svg> Kitten</span>
-                                        <span style="display: flex; align-items: center; gap: 4px; color: var(--font-color);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2" ry="2"></rect><path d="M6 12h4"></path><path d="M8 10v4"></path><line x1="15" y1="13" x2="15.01" y2="13"></line><line x1="18" y1="11" x2="18.01" y2="11"></line></svg> Games</span>
-                                        <span style="display: flex; align-items: center; gap: 4px; color: var(--font-color);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--purple-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg> Sleeping</span>
+                                        <span class="favorite-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--warning-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7 .18 7.79 2.05 2.7 1.67 7.27-1.15 8.72-1.71.84-3.8 1.46-7.45 1.49-3.65-.03-5.74-.65-7.45-1.49-2.82-1.45-3.2-6.02-1.15-8.72.6-.79-1.22-7.21.18-7.79 1.4-.58 4.64.26 6.42 2.26.65-.17 1.33-.26 2-.26z"/><path d="M12 17a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/><path d="M12 14v3"/></svg> Kitten</span>
+                                        <span class="favorite-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2" ry="2"></rect><path d="M6 12h4"></path><path d="M8 10v4"></path><line x1="15" y1="13" x2="15.01" y2="13"></line><line x1="18" y1="11" x2="18.01" y2="11"></line></svg> Games</span>
+                                        <span class="favorite-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--purple-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg> Reading</span>
                                     </span>
                                 </div>
                             </div>
