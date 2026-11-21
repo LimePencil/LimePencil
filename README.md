@@ -1,1 +1,1 @@
-![My TUI Stats](./tui-profile.png)
+![My TUI Stats](./tui-profile.gif)

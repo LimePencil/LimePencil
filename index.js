@@ -1,37 +1,60 @@
+const { execFile } = require('node:child_process');
+const { mkdtemp, rename, rm } = require('node:fs/promises');
+const { join } = require('node:path');
+const { promisify } = require('node:util');
+const { chromium } = require('playwright');
 const { fetchStats } = require('./github');
 const { renderHtml } = require('./template');
-const { chromium } = require('playwright');
+
+const execFileAsync = promisify(execFile);
 
 async function main() {
-    try {
-        console.log("Fetching stats from GitHub...");
-        const stats = await fetchStats();
-        
-        console.log("Generating HTML template...");
-        const html = renderHtml(stats);
+    console.log('Fetching stats from GitHub...');
+    const stats = await fetchStats();
+    const html = renderHtml(stats);
 
-        console.log("Launching headless browser...");
+    const outputDirectory = process.cwd();
+    const temporaryDirectory = await mkdtemp(join(outputDirectory, '.tui-profile-'));
+    const visibleFrame = join(temporaryDirectory, 'cursor-visible.png');
+    const hiddenFrame = join(temporaryDirectory, 'cursor-hidden.png');
+    const temporaryGif = join(temporaryDirectory, 'tui-profile.gif');
+
+    try {
+        console.log('Capturing cursor frames...');
         const browser = await chromium.launch({
             args: ['--no-sandbox', '--disable-setuid-sandbox']
         });
-        
-        const context = await browser.newContext({
-            viewport: { width: 900, height: 1200 }, // Generous height, will clip to content
-            deviceScaleFactor: 4
-        });
-        
-        const page = await context.newPage();
-        await page.setContent(html, { waitUntil: 'networkidle' });
-        
-        const element = page.locator('#capture');
-        await element.screenshot({ path: 'tui-profile.png', omitBackground: true });
-        
-        await browser.close();
-        console.log("Successfully generated tui-profile.png");
-    } catch (err) {
-        console.error("Failed to generate PNG:", err);
-        process.exit(1);
+        try {
+            const page = await browser.newPage({
+                viewport: { width: 900, height: 1200 },
+                deviceScaleFactor: 2
+            });
+            await page.setContent(html, { waitUntil: 'networkidle' });
+
+            const widget = page.locator('#capture');
+            await widget.screenshot({ path: visibleFrame });
+            await page.locator('#cursor').evaluate(cursor => {
+                cursor.style.visibility = 'hidden';
+            });
+            await widget.screenshot({ path: hiddenFrame });
+        } finally {
+            await browser.close();
+        }
+
+        await execFileAsync('python3', [
+            join(__dirname, 'encode-gif.py'),
+            visibleFrame,
+            hiddenFrame,
+            temporaryGif
+        ]);
+        await rename(temporaryGif, join(outputDirectory, 'tui-profile.gif'));
+        console.log('Successfully generated tui-profile.gif');
+    } finally {
+        await rm(temporaryDirectory, { recursive: true, force: true });
     }
 }
 
-main();
+main().catch(error => {
+    console.error('Failed to generate GIF:', error);
+    process.exitCode = 1;
+});
