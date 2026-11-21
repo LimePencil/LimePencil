@@ -7,6 +7,8 @@ on:
     paths:
       - "template.js"
       - "index.js"
+      - "encode-gif.py"
+      - "requirements.txt"
       - "github.js"
       - "package.json"
       - "package-lock.json"
@@ -23,11 +25,16 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "20"
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          python3 -m pip install -r requirements.txt
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
-      - name: Generate PNG
+      - name: Generate GIF
         run: node index.js
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
@@ -35,6 +42,9 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add tui-profile.png
-          git commit -m "chore: Update TUI profile widget" || exit 0
+          git add tui-profile.gif
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "chore: Update TUI profile widget"
           git push
